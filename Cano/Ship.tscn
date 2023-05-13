@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ffdsg-removebg-preview.png" type="Texture" id=1]
+[ext_resource path="res://Ship.gd" type="Script" id=2]
+
+[node name="Ship" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 17, -3.8147e-06 )
+scale = Vector2( 1.89189, 1.85547 )
+polygon = PoolVector2Array( -20.0857, 49.5832, 9.51428, 50.1221, 14.2714, 36.1095, 11.1, 17.7853, 11.6286, -1.61684, 44.9286, 34.4926, 56.5571, 34.4926, 15.3286, -16.7074, 0.52857, -22.0968, 3.17143, -40.421, -6.34286, -46.3495, -13.2143, -43.6547, -13.7429, -22.0968, -30.1286, -19.941, -36.4714, -19.941, -36.4714, -33.4147, -47.0429, -40.421, -49.1571, -30.181, -41.7571, -15.0905, -23.7857, -8.62316, -20.6143, 15.0905, -17.9714, 34.4926 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
